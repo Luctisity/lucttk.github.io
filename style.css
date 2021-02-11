@@ -1,4 +1,37 @@
 body {
-  background-color:black;
-  color:lime;
+	background-color:black;
+	margin:0;
+	padding:0;
+	font-family:Arial;
+	color:white;
+}
+
+header {
+	background-color:#6229ff;
+}
+
+main {
+	margin-left:auto;
+	margin-right:auto;
+	display:block;
+}
+
+.container1 {
+	background-color:#6229ff;
+	border-radius:7px;
+	padding:5px;
+	width:839px;
+}
+
+.container2 {
+	border-radius:7px;
+	padding:5px;
+	background-color:#bac4ff;
+}
+
+a {
+	text-decoration:none;
+	color:#00acf0;
+	font-size:20px;
+	font-weight:bold;
 }

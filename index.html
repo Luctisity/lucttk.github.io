@@ -1,18 +1,53 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>luct.tk - a link shortener for luctisity</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-  </head>
-  <body>
-    <center><h1>luct.tk</h1>
-    <p>a link shortener for luctisity</p>
-    <select id="selectType"><option>project id</option><option>username</option><option>studio id</option></select>: <input required id="idOrLinkThing"> <form><button onclick="generateLink()">go!</button></form>
-    generated link: <input readonly id="generatedLink"></center>
-    <center><h2>okay, what is this?</h2></center>
-    <center><p>luct.tk is a link shortener for the luctisity/rscserver website. you can use this tool to, for example, view a project on another computer, or view your profile instantly.</p></center>
-    <center><h2>oh ok</h2></center>
-    <footer><center>made by AppData#9192</center></footer>
-  </body>
+	<head>
+		<title>luct.tk - A URL shortener for Luctisity</title>
+		<link rel="stylesheet" href="style.css">
+		<script src="script.js"></script>
+	</head>
+	<body onload="reset()">
+		<header>
+			<center><img src="icon.png" width="180px"></center>
+		</header>
+		<main>
+			<h2 align="center">A URL shortener for Luctisity</h2>
+			<div class="container1" style="display:block; margin-left:auto; margin-right:auto;">
+				<h3 style="margin:6px;" align="center">Choose the required option, use the correct value and hit "Generate"!</h3>
+				<div class="container2">
+					<center>
+						<select id="selectType">
+							<option>Project ID</option>
+							<option>Username</option>
+							<option>Studio ID</option>
+						</select>
+						<input required id="idOrLinkThing">
+						<form><button onclick="generateLink()" type="button">Generate</button></form>
+					</center>
+				</div>
+				<h2 style="margin:6px;" align="center">So, what is this website?</h2>
+				<p align="center">luct.tk is a link shortener for the Luctisity/RSCServer website. You can use this tool to, for example, view a project on another computer, or view your profile instantly.</p>
+				<div class="container2" id="mail">
+					<center>
+						<img src="mail.png" width="300px">
+						<h3 style="margin:6px;" align="center">Eihill brought you a letter! It reads:</h3>
+						<input readonly id="generatedLink">
+						<button onclick="clip()" type="button">Copy to clipboard</button>
+						<label id="copied">Successfully copied!</label>
+					</center>
+				</div>
+			</div>
+		</main>
+		<footer><center>
+			<h2>Developed by:</h2>
+			<article style="display:flex; justify-content: center; flex-wrap:nowrap;">
+				<section style="margin-right:12px;">
+					<a href="http://luct.tk/#uGohoski"><img src="gohoski.png" width="100px" height="100px"><br>Gohoski</a><br>
+					<label>Main dev, code,<br> luct.tk domain owner</label>
+				</section>
+				<section>
+					<a href="http://luct.tk/#uLuniFoxo"><img src="lunifoxo.png" width="100px" height="100px"><br>LuniFoxo</a><br>
+					<label>Designer, code</label>
+				</section>
+			</article>
+		</center></footer>
+	</body>
 </html>
