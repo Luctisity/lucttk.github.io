@@ -1,3 +1,4 @@
+// Gohoski's code
 let url = new URL(window.location.href);
 if(url.hash) {
   var hash = url.hash.slice(1);
@@ -35,6 +36,8 @@ function generateLink() {
   document.getElementById("copied").style.display = "none"
   //prompt("link generated! here it is:", generatedLink);
 }
+
+reset();
 
 //Below is Luni's code
 function reset() {
