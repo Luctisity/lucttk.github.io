@@ -37,8 +37,6 @@ function generateLink() {
   //prompt("link generated! here it is:", generatedLink);
 }
 
-reset();
-
 //Below is Luni's code
 function reset() {
 	document.getElementById("mail").style.display = "none"
@@ -51,3 +49,4 @@ function clip() {
 	document.execCommand("copy");
 	document.getElementById("copied").style.display = "block"
 }
+reset();
