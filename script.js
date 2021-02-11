@@ -20,31 +20,16 @@ function generateLink() {
   var type = document.getElementById("selectType").options.selectedIndex;
   if(type == 0) {
     var bruh = document.getElementById("idOrLinkThing").value;
-    if(isNaN(bruh)) {
-      var generatedLink = "luct.tk/#p" + bruh.split("/").pop().slice(0, bruh.length() - 4);
-      document.getElementById("generatedLink").value = generatedLink;
-    } else {
-      var generatedLink = "luct.tk/#p" + bruh;
-      document.getElementById("generatedLink").value = generatedLink;
-    }
+    var generatedLink = "luct.tk/#p" + bruh;
+    document.getElementById("generatedLink").value = generatedLink;
   } else if(type == 1) {
     var bruh = document.getElementById("idOrLinkThing").value;
-    if(bruh.includes("/")) {
-      var generatedLink = "luct.tk/#u" + bruh.split("/").pop().slice(0, bruh.length() - 4);
-      document.getElementById("generatedLink").value = generatedLink;
-    } else {
-      var generatedLink = "luct.tk/#u" + bruh;
-      document.getElementById("generatedLink").value = generatedLink;
-    }
+    var generatedLink = "luct.tk/#u" + bruh;
+    document.getElementById("generatedLink").value = generatedLink;
   } else if(type == 2) {
     var bruh = document.getElementById("idOrLinkThing").value;
-    if(isNaN(bruh)) {
-      var generatedLink = "luct.tk/#s" + bruh.split("/").pop().slice(0, bruh.length() - 4);
-      document.getElementById("generatedLink").value = generatedLink;
-    } else {
-      var generatedLink = "luct.tk/#s" + bruh;
-      document.getElementById("generatedLink").value = generatedLink;
-    }
+    var generatedLink = "luct.tk/#s" + bruh;
+    document.getElementById("generatedLink").value = generatedLink;
   }
   prompt("link generated! here it is:", generatedLink);
 }
