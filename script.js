@@ -49,4 +49,3 @@ function clip() {
 	document.execCommand("copy");
 	document.getElementById("copied").style.display = "block"
 }
-reset();
